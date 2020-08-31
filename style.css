@@ -1,0 +1,253 @@
+body{
+    margin:0;
+}
+#title
+{
+    background-color: #ff4c68;
+}
+h1,h2,h3
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+    line-height: 1.5;
+    font-size: 3rem;
+    color:white;
+}
+p
+{
+    color:#8f8f8f;
+}
+.container-fluid
+{
+    padding:3% 15% 13% 15%;
+}
+#title h1,.btn
+{
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    opacity:0;
+
+}
+/*---------------------------navbar---------------------------*/
+.navbar
+{
+    padding:0 0 4.5rem;
+    animation: left-in 0.5s ease-in forwards;
+    animation-delay: 0s;
+    opacity:0;
+
+}
+.navbar-brand
+{
+    font-size:40px;
+    font-weight: bold;
+}
+.navbar-toggler
+{
+    color:black !important;
+}
+.row
+{
+    padding-top: 50px;
+}
+.nav-item
+{
+    padding-right:30px;
+    font-size: 20px;
+    font-weight:bolder;
+}
+.nav-item:hover
+{
+    border-bottom: 2px solid black !important;
+}
+.nav-link
+{
+    color:white !important;
+}
+.nav-link:hover
+{
+    color:rgb(228, 212, 212) !important;
+}
+.btn
+{
+    margin:5% 3% 5% 0;
+}
+.phone
+{
+    width:60%;
+    position:absolute;
+    animation: fade-in 0.5s ease-in forwards;
+    animation-delay: 1.5s;
+    opacity:0;
+}
+/*-----------feature-box-------------*/
+#features
+{
+    padding:7% 15%;
+    background-color: white;
+    position: relative;
+}
+
+
+.feature-box
+{
+    text-align: center;
+    padding: 5%;
+}
+.feature-box i
+{
+    font-size: 50px;
+    color:#ef8172;
+    padding-bottom:20px;
+}
+.feature-box i:hover
+{
+    color:#ff4c68;
+    
+}
+/*---------------------------testimonials------------------------*/
+#testimonials
+{
+    text-align: center;
+    
+    background-color: #ef8172;
+}
+.testimonial-text
+{
+    font-size:2.5rem;
+    line-height: 1.5;
+    color:white;
+}
+#testimonials img
+{
+    width:15%;
+    border-radius: 100px;
+    padding:2%;
+}
+#press
+{
+    background-color: #ef8172;
+    padding-bottom: 5%;
+    text-align: center;
+}
+#press img
+{
+    width:15%;
+    margin:20px 20px 10px 20px;
+}
+.carousel-item
+{
+    padding:7% 20% 3% 20% ;
+
+}
+/*-----------------pricing--------------------*/
+#pricing
+{
+    padding:20px;
+    text-align: center;
+}
+.pricing-text
+{
+    color:black;
+}
+.pricing-column
+{
+    padding:3% 4%;
+}
+.pricing-column .card
+{
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.2);
+}
+/*-------------------cta-----------------*/
+#cta 
+{
+    background-color: #ff4c68;
+    padding: 2% 7%;
+    text-align: center;
+}
+#cta h3
+{
+    color:white;
+    width:50%;
+    margin:0 auto;
+}
+/*----------------footer-----------------*/
+#footer
+{
+    text-align:center;
+    padding:2% 2% 0 2%;
+    background-color: white;
+}
+#footer i
+{
+    font-size: 25px;
+    padding:1.5%;
+}
+#footer i:hover
+{
+    color:lightseagreen;
+}
+/*------------------------media breakpoint---------------------*/
+@media (max-width:1085px)
+{
+    #title
+    {
+        text-align: center;
+    }
+    #title img
+    {
+        position:static;
+        transform: rotate(0);
+        animation: left-in 0.5s ease-in forwards;
+        animation-delay:0.3s;
+        opacity:0;
+    }
+    p
+    {
+        font-size:22px;
+
+    }
+}
+@keyframes left-in
+{
+    0%
+    {
+        transform: translate(-200px);
+        opacity:0;
+    }
+    100%
+    {
+        transform: translate(0px);
+        opacity:1;
+
+    }
+
+}
+@keyframes fade-in
+{
+    0%
+    {
+        
+        opacity:0;
+    }
+    30%
+    {
+        transform: rotate(10deg);
+        opacity:1;
+    }
+    50%
+    {
+        transform: rotate(20deg);
+        opacity:1;
+    }
+    100%
+    {
+        transform: rotate(25deg);
+        opacity:1;
+
+    }
+
+}
